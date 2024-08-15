@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -V
+#PBS -l nodes=1:ppn=1
+#PBS -q fast
+#PBS -l walltime=9999:00:00
+#PBS -l mem=5000mb
+#PBS -m ae
+
+source /etc/bash.bashrc
+cd $PBS_O_WORKDIR
+export OMP_NUM_THREADS=1
+if [ -e "/opt/intel/composer_xe_2013_sp1.2.144/bin/compilervars.sh" ]; then
+. /opt/intel/composer_xe_2013_sp1.2.144/bin/compilervars.sh intel64
+ulimit -s unlimited
+#####################
+
+/shared/home/cody/pkg42/dft/release/dft > output 2> error
+
+#####################
+
+else
+echo "could not find intel configuration file /opt/intel/composer_xe_2013_sp1.2.144/bin/compilervars.sh"
+fi
+exit 0

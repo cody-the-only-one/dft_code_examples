@@ -1,0 +1,7 @@
+2024m08d15-14:51:26 cd gs/
+2024m08d15-14:52:09 scp clusterproxy:laser_fragmentation/karcsi_collab_24/butane_w_mask/gs/atom.inp .
+2024m08d15-14:52:16 scp clusterproxy:laser_fragmentation/karcsi_collab_24/butane_w_mask/gs/dft.inp .
+2024m08d15-14:52:22 scp clusterproxy:laser_fragmentation/karcsi_collab_24/butane_w_mask/gs/control.inp .
+2024m08d15-14:54:59 cd ../gs/
+2024m08d15-14:55:03 mv r.gs.pbs r.dft.pbs
+2024m08d15-14:55:03 ls

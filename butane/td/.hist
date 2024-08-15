@@ -1,0 +1,13 @@
+2024m08d15-14:52:31 cd td/
+2024m08d15-14:52:31 ls
+2024m08d15-14:53:58 scp clusterproxy:laser_fragmentation/directed_emission_2022/butane/frag_test/td/control.inp .
+2024m08d15-14:54:04 scp clusterproxy:laser_fragmentation/directed_emission_2022/butane/frag_test/td/r.* .
+2024m08d15-14:54:05 ls
+2024m08d15-14:54:08 cat r.td.pbs 
+2024m08d15-14:54:24 cp r.td.pbs ../gs/r.gs.pbs
+2024m08d15-14:54:25 ls
+2024m08d15-14:54:31 mv r.td.pbs r.code.pbs
+2024m08d15-14:54:55 mv r.code.pbs r.dft.pbs
+2024m08d15-14:55:08 cd ../td/
+2024m08d15-14:55:08 ls
+2024m08d15-14:55:45 nano control.inp 

@@ -1,0 +1,102 @@
+GROUND STATE CONTROL
+
+pp_path=/shared/home/cody/pkg/input_files/data/
+
+bf_path=/shared/home/cody/pkg/input_files/data/Ng_6/
+
+run_type=14
+
+continuation=false
+
+mixer_type=0
+
+mixer_beta=0.15
+
+check_convergence=true
+
+ediff=1.d-6
+
+N_scf_iter_max=200
+
+gs_data_output_frequency=100
+
+large_file_format=binary
+
+run_type=78
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GROUND STATE DFT.inp
+
+
+
+
+
+ # Number of atoms:     6
+
+ # Number of domains in the system:     1
+
+ # Grid step:     0.2500000000
+
+ # Number of grid points in x,y,z directions:    97    81    81
+
+ # Simulation box bounds:
+
+ # x    -12.00000000000000 :    12.00000000000000
+
+ # y    -10.00000000000000 :    10.00000000000000
+
+ # z    -10.00000000000000 :    10.00000000000000
+
+ # Distance along axes from leftmost/rightmost atoms to simulation box bounds:
+
+ # x     10.32238126000000 :    10.32238126000000
+
+ # y     10.00000000000000 :    10.00000000000000
+
+ # z     10.00000000000000 :    10.00000000000000
+
+ # System length (from leftmost to rightmost atom in each direction):
+
+ # x,y,z       2.42000     0.00000000000000     1.8706
+
+ 6 2 2 2
+
+    0.67       0.00000     0.00000     6  1
+
+   -0.67       0.00000     0.00000     6  1
+
+    1.21       0.00000     0.9353      1  1
+
+    1.21       0.00000    -0.9353      1  1
+
+   -1.21       0.00000     0.9353      1  1
+
+   -1.21       0.00000    -0.9353      1  1
+
+
+0.3 100 100 100
+
+
+
+
+
+
+
+
+
+ALSO CHANGE THE 5 CAPs to 7 in the full calc run 
