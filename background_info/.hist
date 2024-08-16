@@ -1,0 +1,8 @@
+2024m08d16-08:11:29 cd background_info/
+2024m08d16-08:11:56 cp ~/vandiResearch/varga_group_misc/presentations/group_lectures/tdqm.pdf .
+2024m08d16-08:12:03 cp ~/vandiResearch/varga_group_misc/presentations/group_lectures/dft.pdf .
+2024m08d16-08:12:54 cp ~/vandiResearch/varga_group_misc/presentations/group_lectures/intro_quantum_CLC2017_PDF.pdf .
+2024m08d16-08:12:55 ls
+2024m08d16-08:17:20 cat ../butane/gs/r.dft.pbs 
+2024m08d16-08:30:54 cp ~/vandiResearch/varga_group_misc/presentations/group_lectures/intro_to_linux_240816.pdf .
+2024m08d16-08:30:54 ls
