@@ -1,0 +1,11 @@
+2024m08d23-13:23:53 cd td_projectile_slow/
+2024m08d23-13:23:54 ls
+2024m08d23-13:25:18 ls
+2024m08d23-13:25:22 cp ../td/control.inp .
+2024m08d23-13:25:26 cp ../td/r.dft.pbs 
+2024m08d23-13:25:29 cp ../td/r.dft.pbs .
+2024m08d23-13:29:19 nano control.inp 
+2024m08d23-13:30:21 nano velocity.inp
+2024m08d23-13:30:23 rm velocity.inp 
+2024m08d23-13:30:24 ls
+2024m08d23-13:31:01 nano control.inp 

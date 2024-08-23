@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -V
+#PBS -l nodes=1:ppn=2
+#PBS -q fast
+#PBS -l walltime=999:00:00
+#PBS -l mem=5000mb
+#PBS -m ae
+
+source /etc/bash.bashrc
+cd $PBS_O_WORKDIR
+export OMP_NUM_THREADS=1
+if [ -e "/opt/intel/oneapi/setvars.sh" ]; then
+. /opt/intel/oneapi/setvars.sh
+ulimit -s unlimited
+#####################
+
+/shared/home/cody/pkg43/dft.oneapi/release/dft > output 2> error
+
+#####################
+
+else
+echo "could not find intel configuration file /opt/intel/oneapi/setvars.sh"
+fi
+exit 0
+

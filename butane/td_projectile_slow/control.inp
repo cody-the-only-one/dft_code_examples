@@ -1,0 +1,61 @@
+# This is an input file for doing slower projectiles
+#  need to copy dft.inp and Psi.dat from gs directory.
+#  need to modify the dft.inp file to add projectile
+#  need to specify the projectile velocity in velocity.inp
+
+pp_path=/shared/home/cody/pkg/input_files/data/
+bf_path=/shared/home/cody/pkg/input_files/data/Ng_6/
+gs_path=.
+
+run_type=24
+continuation=true
+tddft_type=2
+td_data_output_frequency=10
+orb_en_comp_output_frequency=10 
+time_step=0.001d0
+N_time_steps=120000
+ramp_time=0.5
+
+move_atoms=true
+move_all_atoms=true
+atomic_movement_frequency=5
+moldyn_output_level=5
+moldyn_output_frequency=500
+save_trajectory=true
+trajectory_output_frequency=500
+
+
+#Static external field
+e_ext=0.d0
+
+output_full_td_density=true
+td_density_output_frequency=500
+td_density_output_format=bov
+
+# setup for the CAP
+cap_left1=-10
+cap_right1=10
+cap_left2=-10
+cap_right2=10
+cap_left3=-10
+cap_right3=10
+cap_parameter=0.4
+save_cap=true
+
+output_full_td_density=true
+td_density_output_format=bov
+large_file_format=binary
+output_mr_density_slice=false
+output_mr_orbital_charge=false
+output_plot_time=false
+
+print_fragment_info=true
+print_fragment_freq=20
+fragment_dens_rad=1.5d0
+
+# manually set the number of orbitals
+man_set_n_orbitals_num=5
+
+# load velocites from velocity.inp
+input_initial_velocity=true
+
