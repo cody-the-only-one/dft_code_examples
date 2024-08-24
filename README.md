@@ -12,3 +12,9 @@ Analyzing time dependent jobs looking at the norm, energy, trajectory and densit
 
 https://www.youtube.com/watch?v=GJ4VxHwUjl4
 
+
+Calculations with projectiles both slow and fast:
+
+https://www.youtube.com/watch?v=_nMHzckBo6o
+
+
