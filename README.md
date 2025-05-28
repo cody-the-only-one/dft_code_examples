@@ -8,6 +8,11 @@ An introduction to running ground state jobs and submitting time dependent jobs:
 https://www.youtube.com/watch?v=vVk1IGdyoO0
 
 
+Specifics for submitting jobs on ACES:
+
+https://www.youtube.com/watch?v=meYhzllZigw
+
+
 Analyzing time dependent jobs looking at the norm, energy, trajectory and density:
 
 https://www.youtube.com/watch?v=GJ4VxHwUjl4
