@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=mpi_test
-# # SBATCH --account=account_name
+#SBATCH --account=155485226413
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
