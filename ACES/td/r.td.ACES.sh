@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=mpi_test
-# # SBATCH --account=account_name
+#SBATCH --account=155485226413
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
-#SBATCH --mem=120GB
+#SBATCH --mem-per-cpu=5GB
 #SBATCH --ntasks-per-node=12
 #SBATCH --cpus-per-task=1
 #SBATCH --time=72:00:00
