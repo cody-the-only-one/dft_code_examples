@@ -62,5 +62,5 @@ laser_envelope_type1=gaussian
 laser_pulse_width1=10
 laser_pulse_shift1=20
 
-
+smart_restart_detect=true
 
