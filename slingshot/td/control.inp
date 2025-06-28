@@ -12,7 +12,7 @@ tddft_type=2
 td_data_output_frequency=10
 orb_en_comp_output_frequency=10 
 time_step=0.001d0
-N_time_steps=100000
+N_time_steps=30000
 ramp_time=0.5
 
 # give the ions nonzero initial velocities
