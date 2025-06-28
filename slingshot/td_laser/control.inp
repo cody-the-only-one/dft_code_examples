@@ -1,9 +1,9 @@
-# This is an input file for removing electrons from different orbitals
-#  The system starts out with atoms not moving
+# This is an input file for doing laser ionization
+#  The system starts out with atoms moving at random speeds
 #
-# change paths to match input files on wherever you do the calculations EX ACES SDSC etc.
-pp_path=/shared/varga_prog/book/mask_volkov_3d/input_files
-bf_path=/shared/varga_prog/book/mask_volkov_3d/input_files/Ng_6
+
+pp_path=/shared/home/cody/pkg/input_files/data/
+bf_path=/shared/home/cody/pkg/input_files/data/Ng_6/
 gs_path=../gs
 
 run_type=24
@@ -16,8 +16,8 @@ N_time_steps=100000
 ramp_time=0.5
 
 # give the ions nonzero initial velocities
-temperature_ions=0
-ion_velocity_initd_seed=1
+temperature_ions=500
+ion_velocity_init_seed=1
 
 move_atoms=true
 move_all_atoms=true
@@ -56,9 +56,12 @@ print_fragment_info=true
 print_fragment_freq=20
 fragment_dens_rad=1.5d0
 
-read_isotope_mass=true
-
-read_initial_occupation=true
+e_laser1=12.3
+laser_wavelength1=750.0
+laser_envelope_type1=gaussian
+laser_pulse_width1=8.5
+laser_pulse_shift1=16
 
 smart_restart_detect=true
 restart_update_frequency=500
+
