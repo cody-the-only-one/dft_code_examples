@@ -1,0 +1,9 @@
+#COMMENT  number of atoms, then some other stuff (just put 3 1's)
+3 1 1 1
+#COMMENT   x y z coordinates, atomic number, box (just put 1), then isotope mass in amu
+#COMMENT  too look up isotope mass, use https://www.nist.gov/pml/atomic-weights-and-isotopic-compositions-relative-atomic-masses
+ 0.0000000000   0.0000000000   0.0693267301 8 1 15.994
+-0.7615740559   0.0000000000  -0.5296633650 1 1 2.014
+ 0.7615740559   0.0000000000  -0.5296633650 1 1 2.014
+#COMMENT  grid step and then number of grid points in x y z
+0.25 100 100 100 
