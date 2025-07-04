@@ -1,0 +1,82 @@
+gs_path=../gs
+# remember to change the paths if not on ACES
+pp_path=/scratch/group/p.phy240167.000/codes/input_data_dft/
+bf_path=/scratch/group/p.phy240167.000/codes/input_data_dft/Ng_6/
+
+run_type=24
+continuation=true
+tddft_type=2
+td_data_output_frequency=10
+orb_en_comp_output_frequency=10 
+time_step=0.001d0
+N_time_steps=100000
+ramp_time=0.5
+
+# change if you want different trajectories.
+temperature_ions=300
+ion_velocity_init_seed=1776
+
+print_fragment_info=false
+print_fragment_freq=40
+fragment_dens_rad=1.5d0
+
+move_atoms=true
+move_all_atoms=true
+atomic_movement_frequency=5
+moldyn_output_level=5
+moldyn_output_frequency=500
+save_trajectory=true
+trajectory_output_frequency=500
+
+#Static external field
+e_ext=0.d0
+
+# change laser parameters or feed in a file
+e_laser1=8
+laser_wavelength1=800.0
+laser_envelope_type1=gaussian
+laser_pulse_width1=2
+laser_pulse_shift1=5
+ramp_time=0.01
+
+# set to true if you want the density
+output_full_td_density=false
+td_density_output_frequency=500
+td_density_output_format=bov
+
+# output control
+output_plot_time=false
+output_mr_density_slice=false
+output_mr_orbital_charge=false
+output_plot_time=false
+
+output_inner_product=false
+large_file_format=binary
+
+# Turn on the mask function
+use_mask_volkov=true
+
+# this is the size of the volkov region. 
+# Make bigger in laser direction for more realistic representation
+volkov_distance1=40
+volkov_distance2=30
+volkov_distance3=30
+
+# Keep this stuff the same
+mask_func_freq=5
+volkov_mask_depth=7.d0
+volkov_capdist_x=7.d0
+volkov_capdist_y=7.d0
+volkov_capdist_z=7.d0
+volkov_capparm=50.d0
+
+# volkov density is much bigger than regular density
+# saving often will eat disk space
+volkov_save_dens=true
+volkov_save_dens_freq=2000
+
+maskv_save_pes=true 
+
+# these will save many PES spectra from different timepoints.
+#maskV_save_multi_PES=true
+#maskV_save_multi_PES_freq=10000

@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=volkov_mpi
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks=10
+#SBATCH --mem-per-cpu=6GB
+#SBATCH --ntasks-per-node=10
+#SBATCH --cpus-per-task=1
+#SBATCH --time=47:59:59
+
+# NOTE1 MEMORY ::  the mask region takes a lot of memory. Probably should check on how much memory it takes.
+#  submit a short job and then use:
+#   sstat --job <jobid> --format=JobID,MaxRSS,AveRSS
+# NOTE2 number of tasks:: there is a different calculation for each orbital in the mask region. 
+#  the code must do 2 FFTs per mask timestep. Use as many tasks as orbitals in the system.
+# NOTE3 Disk space :: Saving the PES will use alot of disk space. 
+
+
+module load intel-compilers/2024.0.0
+module load impi/2021.11.0
+module load GCC/13.2.0
+module load FFTW/3.3.10
+module load imkl/2024.0.0
+
+dftdir=/scratch/group/p.phy240167.000/codes/varga_dft_code_parallel/release/
+
+cd $SLURM_SUBMIT_DIR
+
+mpirun -n 10 $dftdir/dft > output 2> error
