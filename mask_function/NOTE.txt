@@ -1,0 +1,11 @@
+To use the mask function:
+Do the GS calculation with the regular code, like you normally would.
+
+Run the code with the use_mask_volkov=true flag turned on. There is an example control.inp file in this directory. 
+
+The usual CAP keywords will be gone, and there will be a CAP in the volkov region. You do not need to change the CAP size in the volkov region, as it is setup as distance from the boundary. 
+
+If you change the size of the volkov region, the code will require much more memory and density and PES files will take up more disk space. 
+
+See other info in the example pbs job files.
+
