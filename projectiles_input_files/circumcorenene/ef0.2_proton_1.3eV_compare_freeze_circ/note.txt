@@ -1,0 +1,1 @@
+copy Psi.dat and density.dat from the gs directory into a the directory named gs_mod_wP after the GS calculation is complete.

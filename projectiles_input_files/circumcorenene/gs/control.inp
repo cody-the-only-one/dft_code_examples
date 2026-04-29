@@ -1,0 +1,13 @@
+pp_path=~/install/input_files/data/
+bf_path=~/install/input_files/data/Ng_6/
+run_type=14
+continuation=false
+mixer_type=0
+mixer_beta=0.15
+check_convergence=false
+N_scf_iter_max=100
+gs_data_output_frequency=100
+large_file_format=binary
+
+num_AO_setup_iterations_for_grid=4
+
