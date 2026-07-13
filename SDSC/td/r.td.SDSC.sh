@@ -13,6 +13,9 @@ module load cpu/0.17.3b  intel/19.1.3.304/6pv46so fftw/3.3.10/jq4mbmk intel-mkl/
 
 dftdir=/home/covingcl/codes/varga_dft_code_parallel/release/
 
+# sometimes need this:
+# export I_MPI_FABRICS=shm
+
 cd $SLURM_SUBMIT_DIR
 
 mpirun -n 4 $dftdir/dft > output 2> error
